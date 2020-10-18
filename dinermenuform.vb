@@ -1,4 +1,14 @@
-﻿Public Class dinermenuform
+﻿'Ivan Ochoa
+'RCET0265
+'Fall 2020
+'Diner Menu vbForm
+'https://github.com/ochodieg/dinermenu_formapp
+
+
+
+
+
+Public Class dinermenuform
 
     Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
         Me.Close()
@@ -35,7 +45,7 @@
 
     Private Sub PastaroniButton_Click(sender As Object, e As EventArgs) Handles PastaroniButton.Click
         Me.itemNameLabel.Text = "Pastaroni"
-        Me.itemDescriptionLabel.text = "-Pasta? 
+        Me.itemDescriptionLabel.Text = "-Pasta? 
 -Macaroni? 
 -Pastrami? 
 Hey, I never said we had an 'A' Health inspector rating."
