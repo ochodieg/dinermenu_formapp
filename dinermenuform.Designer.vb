@@ -24,14 +24,14 @@ Partial Class dinermenuform
     Private Sub InitializeComponent()
         Me.RavioliButton = New System.Windows.Forms.Button()
         Me.PastaroniButton = New System.Windows.Forms.Button()
-        Me.mabButton = New System.Windows.Forms.Button()
+        Me.ballmeatButton = New System.Windows.Forms.Button()
         Me.spaghootButton = New System.Windows.Forms.Button()
         Me.ExitButton = New System.Windows.Forms.Button()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.homeButton = New System.Windows.Forms.Button()
-        Me.item1Label = New System.Windows.Forms.Label()
-        Me.item2Label = New System.Windows.Forms.Label()
+        Me.itemNameLabel = New System.Windows.Forms.Label()
+        Me.itemDescriptionLabel = New System.Windows.Forms.Label()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
@@ -41,7 +41,7 @@ Partial Class dinermenuform
         '
         'RavioliButton
         '
-        Me.RavioliButton.Location = New System.Drawing.Point(68, 266)
+        Me.RavioliButton.Location = New System.Drawing.Point(58, 267)
         Me.RavioliButton.Name = "RavioliButton"
         Me.RavioliButton.Size = New System.Drawing.Size(114, 62)
         Me.RavioliButton.TabIndex = 0
@@ -50,25 +50,25 @@ Partial Class dinermenuform
         '
         'PastaroniButton
         '
-        Me.PastaroniButton.Location = New System.Drawing.Point(207, 266)
+        Me.PastaroniButton.Location = New System.Drawing.Point(213, 267)
         Me.PastaroniButton.Name = "PastaroniButton"
         Me.PastaroniButton.Size = New System.Drawing.Size(117, 62)
         Me.PastaroniButton.TabIndex = 1
         Me.PastaroniButton.Text = "Pastaroni"
         Me.PastaroniButton.UseVisualStyleBackColor = True
         '
-        'mabButton
+        'ballmeatButton
         '
-        Me.mabButton.Location = New System.Drawing.Point(348, 266)
-        Me.mabButton.Name = "mabButton"
-        Me.mabButton.Size = New System.Drawing.Size(120, 63)
-        Me.mabButton.TabIndex = 2
-        Me.mabButton.Text = "Meat-a-balls"
-        Me.mabButton.UseVisualStyleBackColor = True
+        Me.ballmeatButton.Location = New System.Drawing.Point(363, 264)
+        Me.ballmeatButton.Name = "ballmeatButton"
+        Me.ballmeatButton.Size = New System.Drawing.Size(120, 63)
+        Me.ballmeatButton.TabIndex = 2
+        Me.ballmeatButton.Text = "Meat-a-balls"
+        Me.ballmeatButton.UseVisualStyleBackColor = True
         '
         'spaghootButton
         '
-        Me.spaghootButton.Location = New System.Drawing.Point(498, 266)
+        Me.spaghootButton.Location = New System.Drawing.Point(510, 265)
         Me.spaghootButton.Name = "spaghootButton"
         Me.spaghootButton.Size = New System.Drawing.Size(122, 63)
         Me.spaghootButton.TabIndex = 3
@@ -77,7 +77,7 @@ Partial Class dinermenuform
         '
         'ExitButton
         '
-        Me.ExitButton.Location = New System.Drawing.Point(654, 266)
+        Me.ExitButton.Location = New System.Drawing.Point(666, 265)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Size = New System.Drawing.Size(125, 61)
         Me.ExitButton.TabIndex = 4
@@ -98,10 +98,10 @@ Partial Class dinermenuform
         'SplitContainer1.Panel2
         '
         Me.SplitContainer1.Panel2.Controls.Add(Me.homeButton)
-        Me.SplitContainer1.Panel2.Controls.Add(Me.item1Label)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.itemNameLabel)
         Me.SplitContainer1.Panel2.Controls.Add(Me.RavioliButton)
-        Me.SplitContainer1.Panel2.Controls.Add(Me.mabButton)
-        Me.SplitContainer1.Panel2.Controls.Add(Me.item2Label)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.ballmeatButton)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.itemDescriptionLabel)
         Me.SplitContainer1.Panel2.Controls.Add(Me.spaghootButton)
         Me.SplitContainer1.Panel2.Controls.Add(Me.PastaroniButton)
         Me.SplitContainer1.Panel2.Controls.Add(Me.ExitButton)
@@ -120,28 +120,32 @@ Partial Class dinermenuform
         '
         'homeButton
         '
-        Me.homeButton.Location = New System.Drawing.Point(348, 349)
+        Me.homeButton.Location = New System.Drawing.Point(363, 349)
         Me.homeButton.Name = "homeButton"
         Me.homeButton.Size = New System.Drawing.Size(120, 64)
         Me.homeButton.TabIndex = 5
         Me.homeButton.Text = "Home Button"
         Me.homeButton.UseVisualStyleBackColor = True
         '
-        'item1Label
+        'itemNameLabel
         '
-        Me.item1Label.Location = New System.Drawing.Point(64, 23)
-        Me.item1Label.Name = "item1Label"
-        Me.item1Label.Size = New System.Drawing.Size(294, 189)
-        Me.item1Label.TabIndex = 2
-        Me.item1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.itemNameLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.itemNameLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.itemNameLabel.Location = New System.Drawing.Point(45, 23)
+        Me.itemNameLabel.Name = "itemNameLabel"
+        Me.itemNameLabel.Size = New System.Drawing.Size(285, 189)
+        Me.itemNameLabel.TabIndex = 2
+        Me.itemNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'item2Label
+        'itemDescriptionLabel
         '
-        Me.item2Label.Location = New System.Drawing.Point(494, 23)
-        Me.item2Label.Name = "item2Label"
-        Me.item2Label.Size = New System.Drawing.Size(285, 189)
-        Me.item2Label.TabIndex = 0
-        Me.item2Label.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.itemDescriptionLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.itemDescriptionLabel.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.itemDescriptionLabel.Location = New System.Drawing.Point(506, 23)
+        Me.itemDescriptionLabel.Name = "itemDescriptionLabel"
+        Me.itemDescriptionLabel.Size = New System.Drawing.Size(285, 189)
+        Me.itemDescriptionLabel.TabIndex = 0
+        Me.itemDescriptionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'RichTextBox1
         '
@@ -170,13 +174,13 @@ Partial Class dinermenuform
 
     Friend WithEvents RavioliButton As Button
     Friend WithEvents PastaroniButton As Button
-    Friend WithEvents mabButton As Button
+    Friend WithEvents ballmeatButton As Button
     Friend WithEvents spaghootButton As Button
     Friend WithEvents ExitButton As Button
     Friend WithEvents SplitContainer1 As SplitContainer
     Friend WithEvents Label2 As Label
     Friend WithEvents homeButton As Button
-    Friend WithEvents item1Label As Label
-    Friend WithEvents item2Label As Label
+    Friend WithEvents itemNameLabel As Label
+    Friend WithEvents itemDescriptionLabel As Label
     Friend WithEvents RichTextBox1 As RichTextBox
 End Class
