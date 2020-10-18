@@ -49,7 +49,7 @@ Hey, I never said we had an 'A' Health inspector rating."
     End Sub
 
     Private Sub spaghootButton_Click(sender As Object, e As EventArgs) Handles spaghootButton.Click
-        Me.itemNameLabel.Text = "Eh - spaghoot"
+        Me.itemNameLabel.Text = "Eh - spaghooti"
         Me.itemDescriptionLabel.Text = "- Pasghetti
 - tomato sauce
 - Pepperoni

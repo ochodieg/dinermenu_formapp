@@ -33,56 +33,65 @@ Partial Class dinermenuform
         Me.itemNameLabel = New System.Windows.Forms.Label()
         Me.itemDescriptionLabel = New System.Windows.Forms.Label()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RavioliButton
         '
-        Me.RavioliButton.Location = New System.Drawing.Point(58, 267)
+        Me.RavioliButton.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.RavioliButton.Location = New System.Drawing.Point(663, 62)
         Me.RavioliButton.Name = "RavioliButton"
         Me.RavioliButton.Size = New System.Drawing.Size(114, 62)
         Me.RavioliButton.TabIndex = 0
         Me.RavioliButton.Text = "Ravioli"
-        Me.RavioliButton.UseVisualStyleBackColor = True
+        Me.RavioliButton.UseVisualStyleBackColor = False
         '
         'PastaroniButton
         '
-        Me.PastaroniButton.Location = New System.Drawing.Point(213, 267)
+        Me.PastaroniButton.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PastaroniButton.Location = New System.Drawing.Point(660, 167)
         Me.PastaroniButton.Name = "PastaroniButton"
         Me.PastaroniButton.Size = New System.Drawing.Size(117, 62)
         Me.PastaroniButton.TabIndex = 1
         Me.PastaroniButton.Text = "Pastaroni"
-        Me.PastaroniButton.UseVisualStyleBackColor = True
+        Me.PastaroniButton.UseVisualStyleBackColor = False
         '
         'ballmeatButton
         '
-        Me.ballmeatButton.Location = New System.Drawing.Point(363, 264)
+        Me.ballmeatButton.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ballmeatButton.Location = New System.Drawing.Point(799, 62)
         Me.ballmeatButton.Name = "ballmeatButton"
         Me.ballmeatButton.Size = New System.Drawing.Size(120, 63)
         Me.ballmeatButton.TabIndex = 2
         Me.ballmeatButton.Text = "Meat-a-balls"
-        Me.ballmeatButton.UseVisualStyleBackColor = True
+        Me.ballmeatButton.UseVisualStyleBackColor = False
         '
         'spaghootButton
         '
-        Me.spaghootButton.Location = New System.Drawing.Point(510, 265)
+        Me.spaghootButton.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.spaghootButton.Location = New System.Drawing.Point(799, 166)
         Me.spaghootButton.Name = "spaghootButton"
         Me.spaghootButton.Size = New System.Drawing.Size(122, 63)
         Me.spaghootButton.TabIndex = 3
-        Me.spaghootButton.Text = "spaghoot"
-        Me.spaghootButton.UseVisualStyleBackColor = True
+        Me.spaghootButton.Text = "spaghooti"
+        Me.spaghootButton.UseVisualStyleBackColor = False
         '
         'ExitButton
         '
-        Me.ExitButton.Location = New System.Drawing.Point(666, 265)
+        Me.ExitButton.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ExitButton.Location = New System.Drawing.Point(794, 283)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Size = New System.Drawing.Size(125, 61)
         Me.ExitButton.TabIndex = 4
         Me.ExitButton.Text = "ExitButton"
-        Me.ExitButton.UseVisualStyleBackColor = True
+        Me.ExitButton.UseVisualStyleBackColor = False
         '
         'SplitContainer1
         '
@@ -93,21 +102,23 @@ Partial Class dinermenuform
         '
         'SplitContainer1.Panel1
         '
+        Me.SplitContainer1.Panel1.Controls.Add(Me.PictureBox1)
         Me.SplitContainer1.Panel1.Controls.Add(Me.Label2)
         '
         'SplitContainer1.Panel2
         '
-        Me.SplitContainer1.Panel2.Controls.Add(Me.homeButton)
         Me.SplitContainer1.Panel2.Controls.Add(Me.itemNameLabel)
-        Me.SplitContainer1.Panel2.Controls.Add(Me.RavioliButton)
-        Me.SplitContainer1.Panel2.Controls.Add(Me.ballmeatButton)
         Me.SplitContainer1.Panel2.Controls.Add(Me.itemDescriptionLabel)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.homeButton)
         Me.SplitContainer1.Panel2.Controls.Add(Me.spaghootButton)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.ballmeatButton)
         Me.SplitContainer1.Panel2.Controls.Add(Me.PastaroniButton)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.RavioliButton)
         Me.SplitContainer1.Panel2.Controls.Add(Me.ExitButton)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.PictureBox2)
         Me.SplitContainer1.Panel2.Controls.Add(Me.RichTextBox1)
-        Me.SplitContainer1.Size = New System.Drawing.Size(862, 517)
-        Me.SplitContainer1.SplitterDistance = 88
+        Me.SplitContainer1.Size = New System.Drawing.Size(940, 559)
+        Me.SplitContainer1.SplitterDistance = 69
         Me.SplitContainer1.TabIndex = 5
         '
         'Label2
@@ -120,20 +131,21 @@ Partial Class dinermenuform
         '
         'homeButton
         '
-        Me.homeButton.Location = New System.Drawing.Point(363, 349)
+        Me.homeButton.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.homeButton.Location = New System.Drawing.Point(657, 280)
         Me.homeButton.Name = "homeButton"
         Me.homeButton.Size = New System.Drawing.Size(120, 64)
         Me.homeButton.TabIndex = 5
         Me.homeButton.Text = "Home Button"
-        Me.homeButton.UseVisualStyleBackColor = True
+        Me.homeButton.UseVisualStyleBackColor = False
         '
         'itemNameLabel
         '
         Me.itemNameLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.itemNameLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.itemNameLabel.Location = New System.Drawing.Point(45, 23)
+        Me.itemNameLabel.Location = New System.Drawing.Point(69, 16)
         Me.itemNameLabel.Name = "itemNameLabel"
-        Me.itemNameLabel.Size = New System.Drawing.Size(285, 189)
+        Me.itemNameLabel.Size = New System.Drawing.Size(375, 75)
         Me.itemNameLabel.TabIndex = 2
         Me.itemNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -141,9 +153,9 @@ Partial Class dinermenuform
         '
         Me.itemDescriptionLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.itemDescriptionLabel.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.itemDescriptionLabel.Location = New System.Drawing.Point(506, 23)
+        Me.itemDescriptionLabel.Location = New System.Drawing.Point(69, 107)
         Me.itemDescriptionLabel.Name = "itemDescriptionLabel"
-        Me.itemDescriptionLabel.Size = New System.Drawing.Size(285, 189)
+        Me.itemDescriptionLabel.Size = New System.Drawing.Size(375, 283)
         Me.itemDescriptionLabel.TabIndex = 0
         Me.itemDescriptionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -152,15 +164,35 @@ Partial Class dinermenuform
         Me.RichTextBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RichTextBox1.Location = New System.Drawing.Point(0, 0)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(862, 425)
+        Me.RichTextBox1.Size = New System.Drawing.Size(940, 486)
         Me.RichTextBox1.TabIndex = 0
         Me.RichTextBox1.Text = ""
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(940, 69)
+        Me.PictureBox1.TabIndex = 2
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox2.Image = Global.dinermenu_formapp.My.Resources.Resources._7j61awu5fiz31
+        Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(940, 486)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 3
+        Me.PictureBox2.TabStop = False
         '
         'dinermenuform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(862, 517)
+        Me.ClientSize = New System.Drawing.Size(940, 559)
         Me.Controls.Add(Me.SplitContainer1)
         Me.Name = "dinermenuform"
         Me.Text = "Form1"
@@ -168,6 +200,8 @@ Partial Class dinermenuform
         Me.SplitContainer1.Panel2.ResumeLayout(False)
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer1.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -183,4 +217,6 @@ Partial Class dinermenuform
     Friend WithEvents itemNameLabel As Label
     Friend WithEvents itemDescriptionLabel As Label
     Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
 End Class
