@@ -28,13 +28,13 @@ Partial Class dinermenuform
         Me.spaghootButton = New System.Windows.Forms.Button()
         Me.ExitButton = New System.Windows.Forms.Button()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.homeButton = New System.Windows.Forms.Button()
         Me.itemNameLabel = New System.Windows.Forms.Label()
         Me.itemDescriptionLabel = New System.Windows.Forms.Label()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.homeButton = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
@@ -102,8 +102,8 @@ Partial Class dinermenuform
         '
         'SplitContainer1.Panel1
         '
-        Me.SplitContainer1.Panel1.Controls.Add(Me.PictureBox1)
         Me.SplitContainer1.Panel1.Controls.Add(Me.Label2)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.PictureBox1)
         '
         'SplitContainer1.Panel2
         '
@@ -121,23 +121,25 @@ Partial Class dinermenuform
         Me.SplitContainer1.SplitterDistance = 69
         Me.SplitContainer1.TabIndex = 5
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(940, 69)
+        Me.PictureBox1.TabIndex = 2
+        Me.PictureBox1.TabStop = False
+        '
         'Label2
         '
-        Me.Label2.Location = New System.Drawing.Point(359, 26)
+        Me.Label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label2.Location = New System.Drawing.Point(402, 19)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(109, 37)
+        Me.Label2.Size = New System.Drawing.Size(149, 34)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Diner Menu"
-        '
-        'homeButton
-        '
-        Me.homeButton.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.homeButton.Location = New System.Drawing.Point(657, 280)
-        Me.homeButton.Name = "homeButton"
-        Me.homeButton.Size = New System.Drawing.Size(120, 64)
-        Me.homeButton.TabIndex = 5
-        Me.homeButton.Text = "Home Button"
-        Me.homeButton.UseVisualStyleBackColor = False
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'itemNameLabel
         '
@@ -159,23 +161,15 @@ Partial Class dinermenuform
         Me.itemDescriptionLabel.TabIndex = 0
         Me.itemDescriptionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'RichTextBox1
+        'homeButton
         '
-        Me.RichTextBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.RichTextBox1.Location = New System.Drawing.Point(0, 0)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(940, 486)
-        Me.RichTextBox1.TabIndex = 0
-        Me.RichTextBox1.Text = ""
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(940, 69)
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
+        Me.homeButton.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.homeButton.Location = New System.Drawing.Point(657, 280)
+        Me.homeButton.Name = "homeButton"
+        Me.homeButton.Size = New System.Drawing.Size(120, 64)
+        Me.homeButton.TabIndex = 5
+        Me.homeButton.Text = "Home Button"
+        Me.homeButton.UseVisualStyleBackColor = False
         '
         'PictureBox2
         '
@@ -187,6 +181,15 @@ Partial Class dinermenuform
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 3
         Me.PictureBox2.TabStop = False
+        '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RichTextBox1.Location = New System.Drawing.Point(0, 0)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(940, 486)
+        Me.RichTextBox1.TabIndex = 0
+        Me.RichTextBox1.Text = ""
         '
         'dinermenuform
         '
