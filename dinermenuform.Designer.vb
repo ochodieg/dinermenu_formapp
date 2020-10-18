@@ -125,11 +125,11 @@ Partial Class dinermenuform
         '
         Me.Label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label2.Location = New System.Drawing.Point(397, -11)
+        Me.Label2.Location = New System.Drawing.Point(-13, -11)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(149, 90)
+        Me.Label2.Size = New System.Drawing.Size(950, 90)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Diner Menu " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Ey! Cmon! Pick somethin'!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label2.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Diner Menu " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Ey! Cmon! Pick somethin'!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PictureBox1
