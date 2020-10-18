@@ -28,8 +28,8 @@ Partial Class dinermenuform
         Me.spaghootButton = New System.Windows.Forms.Button()
         Me.ExitButton = New System.Windows.Forms.Button()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.itemNameLabel = New System.Windows.Forms.Label()
         Me.itemDescriptionLabel = New System.Windows.Forms.Label()
         Me.homeButton = New System.Windows.Forms.Button()
@@ -118,28 +118,28 @@ Partial Class dinermenuform
         Me.SplitContainer1.Panel2.Controls.Add(Me.PictureBox2)
         Me.SplitContainer1.Panel2.Controls.Add(Me.RichTextBox1)
         Me.SplitContainer1.Size = New System.Drawing.Size(940, 559)
-        Me.SplitContainer1.SplitterDistance = 69
+        Me.SplitContainer1.SplitterDistance = 78
         Me.SplitContainer1.TabIndex = 5
+        '
+        'Label2
+        '
+        Me.Label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label2.Location = New System.Drawing.Point(397, -11)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(149, 90)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Diner Menu " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Ey! Cmon! Pick somethin'!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PictureBox1
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(940, 69)
+        Me.PictureBox1.Size = New System.Drawing.Size(940, 78)
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
-        '
-        'Label2
-        '
-        Me.Label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label2.Location = New System.Drawing.Point(402, 19)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(149, 34)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Diner Menu"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'itemNameLabel
         '
@@ -177,7 +177,7 @@ Partial Class dinermenuform
         Me.PictureBox2.Image = Global.dinermenu_formapp.My.Resources.Resources._7j61awu5fiz31
         Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(940, 486)
+        Me.PictureBox2.Size = New System.Drawing.Size(940, 477)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 3
         Me.PictureBox2.TabStop = False
@@ -187,7 +187,7 @@ Partial Class dinermenuform
         Me.RichTextBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RichTextBox1.Location = New System.Drawing.Point(0, 0)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(940, 486)
+        Me.RichTextBox1.Size = New System.Drawing.Size(940, 477)
         Me.RichTextBox1.TabIndex = 0
         Me.RichTextBox1.Text = ""
         '
